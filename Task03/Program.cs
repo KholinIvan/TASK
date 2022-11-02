@@ -4,6 +4,10 @@
 
 Console.WriteLine("Введите целое число от 1 до 7: ");
 int number = Convert.ToInt32(Console.ReadLine());
+if (number == 0 || number > 7)
+{
+   Console.WriteLine($"Числу {number} не соответствует день недели");
+}
 if (number == 1)
 {
    Console.WriteLine($"Числу {number} соответствует день недели ПОНЕДЕЛЬНИК");
@@ -31,8 +35,4 @@ if (number == 6)
 if (number == 7)
 {
    Console.WriteLine($"Числу {number} соответствует день недели ВОСКРЕСЕНЬЕ");
-}
-else (number > 7 || number < 1);
-{
-   Console.WriteLine($"Числу {number} не соответствует день недели");
 }
