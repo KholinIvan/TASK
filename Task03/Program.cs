@@ -8,31 +8,31 @@ if (number == 0 || number > 7)
 {
    Console.WriteLine($"Числу {number} не соответствует день недели");
 }
-if (number == 1)
+else if (number == 1)
 {
    Console.WriteLine($"Числу {number} соответствует день недели ПОНЕДЕЛЬНИК");
 }
-if (number == 2)
+else if (number == 2)
 {
    Console.WriteLine($"Числу {number} соответствует день недели ВТОРНИК");
 }
-if (number == 3)
+else if (number == 3)
 {
    Console.WriteLine($"Числу {number} соответствует день недели СРЕДА");
 }
-if (number == 4)
+else if (number == 4)
 {
    Console.WriteLine($"Числу {number} соответствует день недели ЧЕТВЕРГ");
 }
-if (number == 5)
+else if (number == 5)
 {
    Console.WriteLine($"Числу {number} соответствует день недели ПЯТНИЦА");
 }
-if (number == 6)
+else if (number == 6)
 {
    Console.WriteLine($"Числу {number} соответствует день недели СУББОТА");
 }
-if (number == 7)
+else if (number == 7)
 {
    Console.WriteLine($"Числу {number} соответствует день недели ВОСКРЕСЕНЬЕ");
 }
