@@ -14,9 +14,15 @@ int secondDigit = number % 10; // 78 % 10 = 8 (деление с остатко�
 if(firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа равна {firstDigit}");
 else Console.WriteLine($"Наибольшая цифра числа равна {secondDigit}");
 
-// int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit; -> тернарный оператор
-// (если условие выполняется, тогда (?) переменной присваивается первое значение, иначе (:) второе)
-// Console.WriteLine($"Наибольшая цифра числа равна {maxDigit}");
-
-// Console.Write($"Наибольшая цифра числа {number} равна ");
-// Console.WriteLine(firstDigit > secondDigit ? firstDigit : secondDigit); -> без использования переменной int maxDigit
+// Альтернативные способы:
+// Условный оператор:
+int result = default;
+if(firstDigit > secondDigit) result = firstDigit;
+else result = secondDigit;
+Console.WriteLine($"Наибольшая цифра числа равна {result}");
+// Тернарный оператор 1:
+int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit; // если условие выполняется, тогда (?) переменной присваивается первое значение, иначе (:) второе
+Console.WriteLine($"Наибольшая цифра числа равна {maxDigit}");
+// Тернарный оператор 2:
+Console.Write($"Наибольшая цифра числа {number} равна ");
+Console.WriteLine(firstDigit > secondDigit ? firstDigit : secondDigit); // без использования переменной int maxDigit
