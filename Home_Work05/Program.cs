@@ -8,8 +8,14 @@
 Console.WriteLine("Введите любое трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number / 100 >= 1 && number / 100 < 10)
-{ 
+if(number < 0)
+    {
+    number = number * -1; // здесь учёл, если введут отрицательное трёхзначное число
+    }
+
+if(number / 100 >= 1 && number / 100 < 10)
+    {
     Console.WriteLine($"Вторая цифра данного числа - это: {number / 10 % 10}");
-}
+    }
+
 else Console.WriteLine("Вы ввели не трёхзначное число, попробуйте снова");
