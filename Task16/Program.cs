@@ -19,3 +19,11 @@ int Count(int number)
 
 int sum = Count(num);
 Console.WriteLine($"Количество цифр в числе {num} -> {sum}");
+
+// Альтернатива (но есть минус: 0 выдаёт 0 и нужна проверка до метода):
+// int count = 0;
+// while (number > 0)
+// {
+// number = number / 10;
+// count++;
+// }
