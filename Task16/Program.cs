@@ -20,10 +20,14 @@ int Count(int number)
 int sum = Count(num);
 Console.WriteLine($"Количество цифр в числе {num} -> {sum}");
 
-// Альтернатива (но есть минус: 0 выдаёт 0 и нужна проверка до метода):
+// Альтернатива:
 // int count = 0;
 // while (number > 0)
 // {
 // number = number / 10;
 // count++;
 // }
+// return count > 0 ? count : 1;
+
+// !Важно!
+// number = Math.Abs(number); - добавить в метод, чтобы исключить отрицательные числа
