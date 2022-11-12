@@ -12,7 +12,7 @@ int factorial = 1;
 int count = 1;
     for (int i = 0; i < n; i++)
     {
-        factorial = factorial * count;
+        factorial = factorial * count; // factorial *= count; -> тоже самое 
         count++;
     }
     return factorial;
